@@ -6,7 +6,7 @@ import { QuoteForm } from "@/components/quote-form";
 export const metadata: Metadata = {
   title: "Basement Floor Coating in LA & Orange County | SoCal Floor Coatings",
   description:
-    "Moisture-aware polyaspartic basement and home gym floor coatings installed in 1 day. Durable, easy-clean finish with lifetime warranty. Serving LA and Orange County homes.",
+    "Moisture-aware polyaspartic basement and home gym floor coatings installed in 1 day. Durable, easy-clean finish from licensed local installers. Serving LA and Orange County homes.",
   alternates: { canonical: "/services/basement-floor-coating" },
 };
 
@@ -16,7 +16,7 @@ const features = [
   "Comfortable underfoot for gym and play use",
   "Easy-clean surface — ideal for home gyms",
   "Stain, scuff, and chemical resistant",
-  "Lifetime warranty on adhesion",
+  "Written warranty from your installer",
   "Works for laundry rooms and utility spaces",
   "Color consultation included with estimate",
 ];
@@ -62,7 +62,7 @@ export default function BasementFloorCoatingPage() {
           </div>
           <div id="quote" className="scroll-mt-24 rounded-lg border border-gray-200 bg-white p-5 shadow-[0_28px_80px_rgba(0,0,0,0.45)]">
             <div className="mb-4 rounded-md border border-[#f97316]/[0.35] bg-[#f97316]/[0.12] p-4">
-              <p className="text-sm font-black text-[#ea580c]">Free moisture test + color consultation</p>
+              <p className="text-sm font-black text-[#ea580c]">Free estimate + color consultation</p>
               <p className="mt-1 text-sm text-gray-600">Same-week estimates for basement and gym floor projects.</p>
             </div>
             <QuoteForm idPrefix="basement-service" buttonLabel="Request My Free Estimate" defaultProjectType="Basement or home gym" />

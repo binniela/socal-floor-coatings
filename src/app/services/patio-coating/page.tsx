@@ -6,7 +6,7 @@ import { QuoteForm } from "@/components/quote-form";
 export const metadata: Metadata = {
   title: "Patio & Porch Coating in LA & Orange County | SoCal Floor Coatings",
   description:
-    "UV-stable polyaspartic patio and porch floor coatings installed in 1 day. Slip-resistant texture, lifetime warranty. Serving Pasadena, Glendale, Burbank, Irvine & surrounding areas.",
+    "UV-stable polyaspartic patio and porch floor coatings installed in 1 day. Slip-resistant texture, licensed installers. Serving Pasadena, Glendale, Burbank, Irvine & surrounding areas.",
   alternates: { canonical: "/services/patio-coating" },
 };
 
@@ -16,7 +16,7 @@ const features = [
   "Crack and surface repair included",
   "Chemical and stain resistant",
   "Easy to clean — hose-off maintenance",
-  "Lifetime warranty on adhesion",
+  "Written warranty from your installer",
   "Same-day install for most patio sizes",
   "Color and texture consultation included",
 ];
@@ -62,7 +62,7 @@ export default function PatioCoatingPage() {
           </div>
           <div id="quote" className="scroll-mt-24 rounded-lg border border-gray-200 bg-white p-5 shadow-[0_28px_80px_rgba(0,0,0,0.45)]">
             <div className="mb-4 rounded-md border border-[#f97316]/[0.35] bg-[#f97316]/[0.12] p-4">
-              <p className="text-sm font-black text-[#ea580c]">Free moisture test + color consultation</p>
+              <p className="text-sm font-black text-[#ea580c]">Free estimate + color consultation</p>
               <p className="mt-1 text-sm text-gray-600">Same-week estimates for patio and porch projects.</p>
             </div>
             <QuoteForm idPrefix="patio-service" buttonLabel="Request My Free Estimate" defaultProjectType="Patio or porch" />

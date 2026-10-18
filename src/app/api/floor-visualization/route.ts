@@ -143,20 +143,20 @@ export async function POST(request: Request) {
               We took a look at your space and put together a visualization showing what it could look like with our <strong>${styleLabel}</strong> polyaspartic floor system. The attached image shows your space transformed with a professional 1-day install.
             </p>
             <p style="font-size:14px;line-height:1.7;color:#374151;margin:0 0 24px">
-              <strong>What you're seeing:</strong> Premium polyaspartic topcoat over a diamond-ground concrete base. UV-stable, hot-tire-pickup resistant, and backed by our lifetime warranty.
+              <strong>What you're seeing:</strong> Premium polyaspartic topcoat over a diamond-ground concrete base. UV-stable and hot-tire-pickup resistant.
             </p>
             <div style="background:#f9fafb;border:1px solid #e5e7eb;padding:20px 24px;margin:0 0 24px">
               <p style="font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.05em;color:#6b7280;margin:0 0 4px">Your visualization is attached</p>
               <p style="font-size:14px;color:#374151;margin:0">Open the attached PNG to see your space with the ${styleLabel} system.</p>
             </div>
             <p style="font-size:14px;line-height:1.7;color:#374151;margin:0 0 24px">
-              Like what you see? We offer free on-site estimates with a moisture check and full color consultation — usually available the same week, no pressure.
+              Like what you see? We can match you with a licensed local installer for a free on-site estimate with a moisture check and color consultation — usually the same week, no pressure.
             </p>
             <a href="https://www.epoxycoatingco.com/#quote" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:0.05em;padding:14px 28px;text-decoration:none">
               Book My Free Estimate →
             </a>
             <p style="margin-top:32px;padding-top:24px;border-top:1px solid #e5e7eb;font-size:12px;color:#9ca3af;line-height:1.6">
-              SoCal Floor Coatings — Family-owned · Licensed &amp; insured · Serving LA &amp; Orange County
+              SoCal Floor Coatings — a referral service connecting LA &amp; Orange County homeowners with licensed installers
             </p>
           </div>
         </div>

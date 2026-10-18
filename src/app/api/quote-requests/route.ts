@@ -21,6 +21,8 @@ const quoteRequestSchema = z.object({
   garageSize: z.string().trim().max(40).optional(),
   timeline: z.string().trim().max(40).optional(),
   formLocation: z.string().trim().max(40).optional(),
+  // Contact/sharing consent from the form checkbox; leads without it are rejected
+  consent: z.literal(true),
 });
 
 export async function POST(request: Request) {
@@ -72,6 +74,7 @@ export async function POST(request: Request) {
           ${lead.garageSize ? `<tr><td style="padding:8px 12px;border:1px solid #e0e0e0;font-weight:bold;background:#f5f5f5">Garage Size</td><td style="padding:8px 12px;border:1px solid #e0e0e0">${lead.garageSize}</td></tr>` : ""}
           ${lead.timeline ? `<tr><td style="padding:8px 12px;border:1px solid #e0e0e0;font-weight:bold;background:#f5f5f5">Timeline</td><td style="padding:8px 12px;border:1px solid #e0e0e0">${lead.timeline}</td></tr>` : ""}
           ${lead.formLocation ? `<tr><td style="padding:8px 12px;border:1px solid #e0e0e0;font-weight:bold;background:#f5f5f5">Form</td><td style="padding:8px 12px;border:1px solid #e0e0e0">${lead.formLocation}</td></tr>` : ""}
+          <tr><td style="padding:8px 12px;border:1px solid #e0e0e0;font-weight:bold;background:#f5f5f5">Consent</td><td style="padding:8px 12px;border:1px solid #e0e0e0">Agreed to share with installers and be contacted by call/text/email</td></tr>
           <tr><td style="padding:8px 12px;border:1px solid #e0e0e0;font-weight:bold;background:#f5f5f5">Received</td><td style="padding:8px 12px;border:1px solid #e0e0e0">${new Date(lead.receivedAt).toLocaleString("en-US", { timeZone: "America/Los_Angeles" })} PT</td></tr>
         </table>
         <p style="font-family:sans-serif;margin-top:16px;color:#555">Reply to this email or call <strong>${lead.phone}</strong> to follow up.</p>

@@ -16,7 +16,7 @@ const features = [
   "Cool-to-touch finish in California heat",
   "Chemical and chlorine resistant",
   "Crack and surface repair included",
-  "Lifetime warranty on adhesion",
+  "Written warranty from your installer",
   "Complements existing pool tile and coping",
   "Color and finish consultation included",
 ];
@@ -41,7 +41,7 @@ export default function PoolDeckCoatingPage() {
               Pool Deck Coating in LA &amp; Orange County
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-600">
-              Give your pool deck a slip-resistant, UV-stable coating that stays safe when wet, resists California sun, and holds up to pool chemicals — installed in a single day with a lifetime warranty.
+              Give your pool deck a slip-resistant, UV-stable coating that stays safe when wet, resists California sun, and holds up to pool chemicals — installed in a single day by a licensed local installer.
             </p>
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {features.map((f) => (
@@ -62,7 +62,7 @@ export default function PoolDeckCoatingPage() {
           </div>
           <div id="quote" className="scroll-mt-24 rounded-lg border border-gray-200 bg-white p-5 shadow-[0_28px_80px_rgba(0,0,0,0.45)]">
             <div className="mb-4 rounded-md border border-[#f97316]/[0.35] bg-[#f97316]/[0.12] p-4">
-              <p className="text-sm font-black text-[#ea580c]">Free moisture test + color consultation</p>
+              <p className="text-sm font-black text-[#ea580c]">Free estimate + color consultation</p>
               <p className="mt-1 text-sm text-gray-600">Same-week estimates for pool deck projects.</p>
             </div>
             <QuoteForm idPrefix="pool-service" buttonLabel="Request My Free Estimate" defaultProjectType="Patio or porch" />

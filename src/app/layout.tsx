@@ -20,7 +20,7 @@ const siteUrl = "https://epoxycoatingco.com";
 
 const title = "SoCal Floor Coatings | Garage Floor Coating LA & Orange County";
 const description =
-  "Polyaspartic garage floor, patio, basement, and pool deck coatings installed in 1 day. Lifetime warranty, diamond grinding prep. Serving Pasadena, Glendale, Irvine & all of SoCal.";
+  "Polyaspartic garage floor, patio, basement, and pool deck coatings installed in 1 day by licensed local installers. Diamond grinding prep. Serving Pasadena, Glendale, Irvine & all of SoCal.";
 
 const localBusinessSchema = {
   "@context": "https://schema.org",

@@ -29,6 +29,7 @@ export function QuoteForm({ idPrefix, buttonLabel, light = false, defaultProject
   const [email, setEmail] = useState("");
   const [zip, setZip] = useState("");
   const [timeline, setTimeline] = useState("");
+  const [consent, setConsent] = useState(false);
   const [timelineOpen, setTimelineOpen] = useState(false);
   const [photo, setPhoto] = useState<File | null>(null);
   const [photoPreview, setPhotoPreview] = useState<string | null>(null);
@@ -89,7 +90,7 @@ export function QuoteForm({ idPrefix, buttonLabel, light = false, defaultProject
       const res = await fetch("/api/quote-requests", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, phone, email, zip, projectType, garageSize, timeline, formLocation: idPrefix }),
+        body: JSON.stringify({ name, phone, email, zip, projectType, garageSize, timeline, formLocation: idPrefix, consent }),
       });
       if (!res.ok) throw new Error("failed");
 
@@ -388,6 +389,20 @@ export function QuoteForm({ idPrefix, buttonLabel, light = false, defaultProject
               }}
             />
           </div>
+
+          <label className={`flex items-start gap-2 text-xs leading-5 ${light ? "text-[#52606d]" : "text-gray-500"}`}>
+            <input
+              type="checkbox"
+              required
+              checked={consent}
+              onChange={(e) => setConsent(e.target.checked)}
+              className="mt-1 h-4 w-4 shrink-0 accent-[#ea580c]"
+            />
+            <span>
+              I agree that SoCal Floor Coatings may share my details with up to 3 licensed local installers, and that they may contact me by phone, text, or email about my project, including by automated means. Consent is not a condition of purchase. Msg &amp; data rates may apply; reply STOP to opt out. See our{" "}
+              <a href="/privacy" className="underline">privacy policy</a>.
+            </span>
+          </label>
 
           <div className="flex gap-2">
             <button

@@ -40,7 +40,7 @@ const reviews = [
 ];
 
 const process = [
-  { icon: ClipboardCheck, title: "Free Estimate", text: "We measure, moisture-check, review colors, and send a clear quote." },
+  { icon: ClipboardCheck, title: "Free Estimate", text: "A local installer measures, moisture-checks, reviews colors, and sends a clear quote." },
   { icon: Wrench, title: "Prep & Install", text: "Diamond grinding, crack repair, basecoat, broadcast, scrape, and topcoat." },
   { icon: Sparkles, title: "Enjoy The Floor", text: "Easy to clean, stain resistant, UV stable, and ready for real home life." },
 ];
@@ -95,8 +95,8 @@ export function TrustBand() {
         {[
           ["500+", "Garage floors coated"],
           ["1-Day", "Install — most systems"],
-          ["0%", "Financing available"],
-          ["Lifetime", "Warranty included"],
+          ["CSLB", "Licensed installers"],
+          ["Free", "Written estimates"],
         ].map(([value, label]) => (
           <div key={label} className="py-8 text-center">
             <p className="text-3xl font-black text-[#f97316]">{value}</p>
@@ -142,7 +142,7 @@ export function ReviewsSection() {
               See all reviews on Google →
             </a>
             <p className="mt-3 text-sm font-bold text-gray-400">
-              Family-owned • Licensed &amp; insured • Serving LA and Orange County homes
+              Licensed, insured installers • Serving LA and Orange County homes
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
@@ -175,7 +175,7 @@ export function ProcessSection() {
           inverted
           eyebrow="Simple 3-step process"
           title="From quote to finished floor without the guesswork."
-          text="You know what happens, when we arrive, how we prep, and when you can use the space again."
+          text="You know what happens, when your installer arrives, how they prep, and when you can use the space again."
         />
         <div className="mt-12 grid gap-px border border-white/10 bg-white/10 lg:grid-cols-3">
           {process.map((step, index) => (
@@ -232,8 +232,12 @@ export function PageFooter() {
             <a href="/services/patio-coating" className="hover:text-gray-900">Patio Coating</a>
             <a href="/services/basement-floor-coating" className="hover:text-gray-900">Basement Floors</a>
             <a href="/faq" className="hover:text-gray-900">FAQ</a>
+            <a href="/privacy" className="hover:text-gray-900">Privacy</a>
           </div>
         </div>
+        <p className="mt-8 border-t border-gray-100 pt-6 text-center text-xs leading-5 text-gray-400 sm:text-left">
+          SoCal Floor Coatings is a referral service. We are not a contractor and do not perform installation work. Projects are completed by independent, CSLB-licensed contractors, who are solely responsible for their work, pricing, and warranties.
+        </p>
       </div>
     </footer>
   );

@@ -6,7 +6,7 @@ import { QuoteForm } from "@/components/quote-form";
 export const metadata: Metadata = {
   title: "Garage Floor Coating in LA & Orange County | SoCal Floor Coatings",
   description:
-    "Professional polyaspartic garage floor coatings installed in 1 day. Lifetime warranty, diamond grinding prep, and hot-tire-pickup resistant finish. Serving Pasadena, Glendale, Burbank & more.",
+    "Professional polyaspartic garage floor coatings installed in 1 day by licensed local installers. Diamond grinding prep, and hot-tire-pickup resistant finish. Serving Pasadena, Glendale, Burbank & more.",
   alternates: { canonical: "/services/garage-floor-coating" },
 };
 
@@ -16,7 +16,7 @@ const features = [
   "Hot-tire-pickup resistant topcoat",
   "UV-stable — no yellowing in sunlight",
   "Stain, oil, and chemical resistant",
-  "Lifetime adhesion warranty in writing",
+  "Written adhesion warranty from your installer",
   "1-day install — drive on it the next day",
   "Crack and chip repair included",
 ];
@@ -47,7 +47,7 @@ export default function GarageFloorCoatingPage() {
                 <Timer className="h-4 w-4 text-[#f97316]" aria-hidden /> 1-Day Install
               </span>
               <span className="inline-flex items-center gap-2 rounded-md border border-gray-200 bg-gray-100 px-3 py-2 text-xs font-bold text-gray-700">
-                <ShieldCheck className="h-4 w-4 text-[#f97316]" aria-hidden /> Lifetime Warranty
+                <ShieldCheck className="h-4 w-4 text-[#f97316]" aria-hidden /> Licensed Installers
               </span>
             </div>
             <p className="mb-4 text-sm font-black uppercase text-[#ea580c]">Residential garage floor coating</p>
@@ -56,7 +56,7 @@ export default function GarageFloorCoatingPage() {
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-600">
               Turn a stained, dusty garage slab into a clean, glossy floor that won&apos;t peel, yellow, or pick up hot tires.
-              Installed in a single day with diamond grinding prep and a lifetime warranty.
+              Installed in a single day with diamond grinding prep by a licensed local installer.
             </p>
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {features.map((f) => (
@@ -85,7 +85,7 @@ export default function GarageFloorCoatingPage() {
           {/* Quote form */}
           <div id="quote" className="scroll-mt-24 rounded-lg border border-gray-200 bg-white p-5 shadow-[0_28px_80px_rgba(0,0,0,0.45)]">
             <div className="mb-4 rounded-md border border-[#f97316]/[0.35] bg-[#f97316]/[0.12] p-4">
-              <p className="text-sm font-black text-[#ea580c]">Free moisture test + color consultation</p>
+              <p className="text-sm font-black text-[#ea580c]">Free estimate + color consultation</p>
               <p className="mt-1 text-sm text-gray-600">Same-week estimates for garage floor projects.</p>
             </div>
             <QuoteForm idPrefix="garage-service" buttonLabel="Request My Free Estimate" defaultProjectType="Garage floor" />

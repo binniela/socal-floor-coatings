@@ -5,7 +5,7 @@ import { PageFooter, PageHeader, SectionHeading } from "@/components/epoxy-secti
 export const metadata: Metadata = {
   title: "Epoxy & Polyaspartic Garage Floor Coating FAQ | SoCal Floor Coatings",
   description:
-    "Answers to common questions about epoxy vs polyaspartic, cost, hot tire pickup, lifetime warranty, and 1-day installation for residential garage floors in LA and Orange County.",
+    "Answers to common questions about epoxy vs polyaspartic, cost, hot tire pickup, warranties, and 1-day installation for residential garage floors in LA and Orange County.",
 };
 
 const faqs = [
@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "What is hot tire pickup and how do I prevent it?",
     answer:
-      "Hot tire pickup happens when warm tires — after driving — bond to a floor coating that softens under heat, then pull the coating off when you drive away. It's most common with low-quality paint, thin coatings, and floors that weren't properly prepped. Diamond grinding before coating, combined with a commercial-grade polyaspartic topcoat, significantly reduces the risk. Our system is rated hot-tire-pickup resistant and backed by a lifetime warranty.",
+      "Hot tire pickup happens when warm tires — after driving — bond to a floor coating that softens under heat, then pull the coating off when you drive away. It's most common with low-quality paint, thin coatings, and floors that weren't properly prepped. Diamond grinding before coating, combined with a commercial-grade polyaspartic topcoat, significantly reduces the risk. Ask your installer whether their system is rated hot-tire-pickup resistant, and get the warranty in writing.",
   },
   {
     question: "How long does a polyaspartic garage floor installation take?",
@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "How long does an epoxy or polyaspartic garage floor last?",
     answer:
-      "A properly prepped polyaspartic garage system can last 15–25+ years with normal residential use. The two biggest factors in longevity are surface preparation (diamond grinding opens the concrete profile so the coating bonds deeply) and topcoat quality. Our system is backed by a lifetime residential warranty covering adhesion and hot-tire-pickup failure.",
+      "A properly prepped polyaspartic garage system can last 15–25+ years with normal residential use. The two biggest factors in longevity are surface preparation (diamond grinding opens the concrete profile so the coating bonds deeply) and topcoat quality. Ask your installer for a written warranty that covers adhesion and hot-tire-pickup failure.",
   },
   {
     question: "How much does a garage floor coating cost in LA or Orange County?",
@@ -37,17 +37,17 @@ const faqs = [
   {
     question: "Do you offer financing?",
     answer:
-      "Yes. We offer 0% financing through Hearth for qualified residential projects. Monthly payment options are available for garage floors, patios, basements, and multi-area projects. Ask about financing options during your free estimate.",
+      "Often, yes. Many of the installers we work with offer monthly payment plans for garage floors, patios, basements, and multi-area projects. Terms are set by the installer — ask about financing during your free estimate.",
   },
   {
-    question: "What does the lifetime warranty cover?",
+    question: "What should a floor coating warranty cover?",
     answer:
-      "Our lifetime residential warranty covers adhesion failure and hot-tire-pickup failure under normal residential use. The warranty is provided in writing before any work begins — no surprises. Commercial use, vehicle fluid spills left unaddressed for extended periods, and structural concrete movement are excluded. Ask for the full warranty document during your estimate.",
+      "A good residential warranty covers adhesion failure and hot-tire-pickup failure under normal residential use, and it should be in writing before any work begins. Typical exclusions are commercial use, vehicle fluid spills left for long periods, and structural concrete movement. Warranties are issued by the installer — ask for the full document during your estimate.",
   },
   {
     question: "Can you coat a patio, basement, or pool deck in addition to a garage?",
     answer:
-      "Yes. We install polyaspartic coatings on patios, porches, basements, home gyms, laundry rooms, utility rooms, and pool decks. Each surface type has specific prep requirements — patios need UV-stable topcoats, pool decks require slip-resistant texture, and basements need moisture testing. We assess each surface at the estimate and recommend the right system for the use case.",
+      "Yes. The installers we work with apply polyaspartic coatings on patios, porches, basements, home gyms, laundry rooms, utility rooms, and pool decks. Each surface type has specific prep requirements — patios need UV-stable topcoats, pool decks require slip-resistant texture, and basements need moisture testing. Your installer assesses each surface at the estimate and recommend the right system for the use case.",
   },
   {
     question: "What is diamond grinding and why does it matter?",
@@ -57,7 +57,7 @@ const faqs = [
   {
     question: "Do I need to move everything out of the garage?",
     answer:
-      "Yes. The garage should be cleared of all vehicles, boxes, shelving, and other items before the crew arrives. We need full access to the concrete slab. If there are wall-mounted shelving units or cabinets with legs, those should be moved or their footprints noted in advance so the crew can work around anchor holes.",
+      "Yes. The garage should be cleared of all vehicles, boxes, shelving, and other items before the crew arrives. Installers need full access to the concrete slab. If there are wall-mounted shelving units or cabinets with legs, those should be moved or their footprints noted in advance so the crew can work around anchor holes.",
   },
   {
     question: "How do I maintain a polyaspartic garage floor?",
@@ -67,7 +67,7 @@ const faqs = [
   {
     question: "How do I get a free estimate?",
     answer:
-      "Fill out the short quote form on our homepage or call (626) 243-8727. We'll schedule a same-week on-site visit, measure the space, moisture-test the concrete, walk through color and finish options, and send a written quote within 24 hours. No pressure, no obligation.",
+      "Fill out the short quote form on our homepage or call (626) 243-8727. We'll match you with a licensed local installer for a same-week on-site visit. They measure the space, moisture-test the concrete, walk through color and finish options, and send a written quote. No pressure, no obligation.",
   },
 ];
 
@@ -106,7 +106,7 @@ export default function FaqPage() {
           <SectionHeading
             eyebrow="Frequently asked questions"
             title="Everything you need to know before the estimate."
-            text="Answers about polyaspartic vs epoxy, cost, hot tire pickup, warranty, 1-day installs, and what to expect from an SoCal Floor Coatings project."
+            text="Answers about polyaspartic vs epoxy, cost, hot tire pickup, warranty, 1-day installs, and what to expect from your garage floor project."
           />
 
           <div className="mt-12 divide-y divide-gray-200 rounded-lg border border-gray-200 bg-gray-50">
@@ -127,7 +127,7 @@ export default function FaqPage() {
               Talk to us — free, no pressure.
             </h2>
             <p className="mt-4 text-base text-gray-600">
-              Call (626) 243-8727 or request a free estimate and we will walk through your project, surface condition, and coating options in person.
+              Call (626) 243-8727 or request a free estimate and a licensed local installer will walk through your project, surface condition, and coating options in person.
             </p>
             <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
               <a

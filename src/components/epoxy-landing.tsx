@@ -28,7 +28,7 @@ import {
   Zap,
 } from "lucide-react";
 import { QuoteForm } from "@/components/quote-form";
-import { ProcessSection, ReviewsSection, SectionHeading, TrustBand } from "@/components/epoxy-sections";
+import { PageFooter, ProcessSection, ReviewsSection, SectionHeading, TrustBand } from "@/components/epoxy-sections";
 
 const companyName = "SoCal Floor Coatings";
 const navLinks = [
@@ -56,7 +56,7 @@ const images = {
 const trustStats = [
   { icon: Star, label: "4.9 Google Rating", detail: "Local homeowners" },
   { icon: Timer, label: "1-Day Installs", detail: "Most garage systems" },
-  { icon: ShieldCheck, label: "Lifetime Warranty", detail: "Adhesion backed" },
+  { icon: ShieldCheck, label: "Licensed Installers", detail: "CSLB license checked" },
   { icon: BadgeCheck, label: "Polyaspartic System", detail: "Won't peel like epoxy" },
 ];
 
@@ -93,11 +93,11 @@ const services = [
 
 const reasons = [
   { icon: Gem, title: "Polyaspartic — not epoxy", text: "UV-stable, won't yellow or peel. Hot-tire-pickup resistant. Cures in hours, not days." },
-  { icon: Hammer, title: "Diamond grinding prep", text: "We open the concrete profile before coating so the system bonds correctly." },
+  { icon: Hammer, title: "Diamond grinding prep", text: "Installers we work with open the concrete profile before coating so the system bonds correctly." },
   { icon: Zap, title: "Same-week scheduling", text: "Fast site visits and tight installation windows for ready projects." },
-  { icon: BadgeDollarSign, title: "0% financing available", text: "Low monthly payments for garage, patio, basement, and multi-area home projects." },
+  { icon: BadgeDollarSign, title: "Ask about financing", text: "Many installers offer monthly payment plans for garage, patio, and basement projects." },
   { icon: Wrench, title: "Crack repair included", text: "Chips, cracks, and surface defects are treated before basecoat." },
-  { icon: ShieldCheck, title: "Lifetime warranty in writing", text: "Clear workmanship and adhesion coverage — including hot-tire-pickup — before work starts." },
+  { icon: ShieldCheck, title: "Warranty in writing", text: "We favor installers who put adhesion and hot-tire-pickup coverage in writing before work starts." },
 ];
 
 const projects = [
@@ -176,6 +176,10 @@ export function EpoxyLanding() {
       <BuyerGuideSection />
       <FaqSection />
       <ContactSection />
+      {/* Bottom padding keeps the footer clear of the fixed mobile CTA bar */}
+      <div className="pb-20 sm:pb-0">
+        <PageFooter />
+      </div>
       <MobileCtaBar />
     </main>
   );
@@ -263,18 +267,18 @@ function HeroSection() {
         <div className="max-w-4xl py-4">
           <div className="mb-5 flex flex-wrap gap-2">
             <Badge icon={Star}>4.9 Google rating</Badge>
-            <Badge icon={ShieldCheck}>Licensed & insured</Badge>
-            <Badge icon={Clock3}>Family-owned local crew</Badge>
+            <Badge icon={ShieldCheck}>Licensed, insured installers</Badge>
+            <Badge icon={Clock3}>Local LA & OC pros</Badge>
           </div>
-          <p className="mb-3 text-sm font-black uppercase tracking-widest text-[#f97316]">Residential epoxy flooring company</p>
+          <p className="mb-3 text-sm font-black uppercase tracking-widest text-[#f97316]">Garage floor coating specialists</p>
           <h1 className="contractor-display max-w-4xl text-5xl leading-[0.98] text-white sm:text-6xl">
             Polyaspartic Garage Floor Coatings — Installed In 1 Day
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-7 text-gray-300">
-            Won&apos;t peel like epoxy. UV-stable. Lifetime warranty backed by SoCal Floor Coatings. Diamond-ground prep, premium polyaspartic system, and a finish built for real home life in LA & Orange County.
+            Won&apos;t peel like epoxy. UV-stable. We match you with licensed, insured local installers who use diamond-ground prep and a premium polyaspartic system — a finish built for real home life in LA & Orange County.
           </p>
           <p className="mt-3 text-sm font-bold uppercase tracking-wide text-gray-500">
-            Family-owned • 500+ local garage floors coated • LA & Orange County
+            500+ local garage floors coated • LA & Orange County
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a
@@ -440,7 +444,7 @@ function WhyChooseUs() {
               inverted
               eyebrow="Why choose us"
               title="Every trust signal homeowners want before work starts."
-              text="We make the project clear, clean, and warranty-backed before work starts at your home."
+              text="We vet installers so your project is clear, clean, and in writing before work starts at your home."
             />
             <a
               href="#contact"
@@ -472,9 +476,9 @@ function OfferSection() {
         <div className="grid overflow-hidden border border-[#f97316]/20 bg-[#0d0d0d] lg:grid-cols-[1.1fr_0.9fr]">
           <div className="p-7 sm:p-10">
             <p className="text-sm font-black uppercase tracking-widest text-[#f97316]">This month for homeowners</p>
-            <h2 className="contractor-display mt-4 max-w-3xl text-4xl leading-tight text-white sm:text-5xl">Free Moisture Test + Flake Color Consultation</h2>
+            <h2 className="contractor-display mt-4 max-w-3xl text-4xl leading-tight text-white sm:text-5xl">Free Estimate + Flake Color Consultation</h2>
             <p className="mt-5 max-w-2xl text-base leading-7 text-gray-400">
-              Book a home estimate this month and we will check your concrete, review color blends, and map out the right coating system for your space.
+              Request an estimate and a vetted local installer will check your concrete, review color blends, and map out the right coating system for your space.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a
@@ -652,12 +656,12 @@ function ContactSection() {
             Tell us which residential space you want coated and we will follow up with estimate options, timing, and color guidance.
           </p>
           <p className="mt-4 text-sm font-black uppercase tracking-wide text-[#f97316]">
-            Family-owned • 500+ local garage floors coated • LA + OC homes
+            500+ local garage floors coated • LA + OC homes
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             <ContactTile icon={MapPin} label="Service area" value="LA + OC homes" href="#contact" />
             <ContactTile icon={Clock3} label="Response time" value="Same business day" href="#quote" />
-            <ContactTile icon={Phone} label="Prefer to call?" value="(650) 219-8805" href="tel:+16502198805" />
+            <ContactTile icon={Phone} label="Prefer to call?" value="(626) 243-8727" href="tel:+16262438727" />
           </div>
         </div>
         {/* White form card pops against the dark section */}
@@ -697,10 +701,10 @@ function FinancingSection() {
           <div className="p-7 sm:p-10">
             <p className="text-sm font-black uppercase tracking-widest text-[#f97316]">Flexible payment options</p>
             <h2 className="contractor-display mt-4 text-4xl leading-tight text-white sm:text-5xl">
-              0% Financing Available
+              Financing Options
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-7 text-gray-400">
-              Split your garage, patio, or basement floor into low monthly payments. Hearth financing available for qualified residential projects — ask during your free estimate.
+              Many of the installers we work with offer monthly payment plans for garage, patio, and basement floors — ask during your free estimate.
             </p>
             <a
               href="#quote"
@@ -716,7 +720,7 @@ function FinancingSection() {
               Low monthly<br />payments
             </p>
             <p className="text-center text-xs leading-5 text-gray-500">
-              No hard credit pull<br />to check your rate
+              Terms set by<br />your installer
             </p>
           </div>
         </div>

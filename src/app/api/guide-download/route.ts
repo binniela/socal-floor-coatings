@@ -118,7 +118,7 @@ export async function POST(request: Request) {
             <div style="background:#071316;border:1px solid rgba(45,212,191,0.3);border-radius:8px;padding:24px 28px">
               <p style="color:#99f6e4;font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 8px">Ready for your free estimate?</p>
               <p style="color:#ffffff;font-size:16px;font-weight:800;margin:0 0 8px">SoCal Floor Coatings — (626) 243-8727</p>
-              <p style="color:rgba(255,255,255,0.65);font-size:14px;line-height:1.6;margin:0 0 16px">Family-owned crew serving LA &amp; Orange County. Free moisture test, color consultation, and written quote — no pressure.</p>
+              <p style="color:rgba(255,255,255,0.65);font-size:14px;line-height:1.6;margin:0 0 16px">We match LA &amp; Orange County homeowners with licensed local installers. Free estimate, color consultation, and written quote — no pressure.</p>
               <a href="https://apexgaragecoatings.com/#quote" style="display:inline-block;background:#2dd4bf;color:#08090b;font-weight:800;font-size:13px;padding:12px 24px;border-radius:6px;text-decoration:none">Get My Free Estimate →</a>
             </div>
 
